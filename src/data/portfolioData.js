@@ -216,15 +216,15 @@ const portfolioData = {
       location: "Kolkata, India",
       timeline: "May – July 2024",
       summary:
-        "Worked in the solid propulsion research group at ICSP in Kolkata over the summer. The bulk of my time was spent on analysis work and instrumentation preparation for their solid motor test program — studying how grain geometry affects thrust profiles and getting test hardware set up correctly before I had to return to the US.",
+        "Worked with the solid propulsion group at ICSP in Kolkata, contributing to their research rocket program. My work was primarily analytical — nozzle geometry design, propellant grain calculations, and pulling together the performance specs for the motor configurations they were studying.",
       context: [
-        "Worked through structural analysis on how different propellant grain geometries change the burn surface area over time and what that means for the shape of the thrust curve. Compared three motor configurations, which gave me a real sense of how much the thrust profile depends on those geometry decisions.",
-        "Helped set up and calibrate instrumentation for the test program — thermocouple placement, pressure transducer calibration, load cell alignment. I had to head back to the US before the firing days, but the setup work was a serious exercise in getting measurement systems right.",
+        "Worked through propellant grain geometry calculations to understand how burn surface area evolves during a firing and how that translates into thrust over time. The geometry decisions have a direct effect on the shape of the thrust curve, so getting those numbers right matters.",
+        "Designed the nozzle geometry for the motor — sizing throat area and expansion ratio based on the target chamber pressure and desired exit conditions. Put together the full rocket specs to document the design and give the team a clear reference for the configuration.",
       ],
       metrics: [
-        "Grain geometry and burn surface area analysis across three solid motor configurations.",
-        "Instrumentation setup and calibration for hot-fire testing — thermocouple, pressure transducer, and load cell.",
-        "First professional research environment outside a university lab — exposed to how a real propulsion program runs.",
+        "Nozzle geometry design and sizing for solid motor configurations under study.",
+        "Propellant grain calculations linking burn surface area evolution to thrust profile.",
+        "Full rocket specification documentation for the research program.",
       ],
       images: [
         "/images/experience/icsp/icsp-hotfire-setup.jpg",
