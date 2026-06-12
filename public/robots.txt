@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block internal build artifacts and source maps
+Disallow: /src/
+Disallow: /*.map
+Disallow: /node_modules/
+
+Sitemap: https://rickbhattacharya.com/sitemap.xml
