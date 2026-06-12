@@ -65,16 +65,16 @@ const portfolioData = {
       timeline: "Apr 2025 – Present",
       status: "active",
       summary:
-        "Leading the design of a 250 lbf bipropellant liquid rocket engine for Carolina Liquid Rocketry's first hot-fire program. The engine targets a 5-second burn and uses a pintle injector — a design architecture I studied through Halfcat's open-source work and adapted for our chamber geometry and propellant combination.",
+        "Led the design study for a 250 lbf bipropellant liquid rocket engine through Carolina Liquid Rocketry. The program reached a complete parametric CAD model and a full-scale 3D printed mockup before being paused pending funding for hardware. The design uses a pintle injector architecture — a geometry I studied through Halfcat's open-source work and adapted for our propellant combination and chamber sizing.",
       context: [
-        "Used NASA CEA to work out propellant mixture ratios, chamber pressure targets, and expected specific impulse. Those numbers drove the rest of the design.",
-        "Built the CAD model in Fusion 360 with a fully parametric structure — when performance requirements changed (which they did), I could update geometry across all five subsystem interfaces without rebuilding from scratch.",
-        "Before ordering any metal, I printed a full-scale mockup to do physical fit checks. Found three interference issues that would have been expensive to discover mid-machining.",
+        "Used NASA CEA to determine propellant mixture ratios, chamber pressure, and specific impulse targets. Those numbers drove every downstream geometry decision in the design.",
+        "Built a fully parametric CAD model in Fusion 360 — when performance requirements shifted, I could propagate changes across all five subsystem interfaces without rebuilding anything from scratch.",
+        "Before the program paused, I printed a full-scale mockup to do physical fit checks. It caught three interference issues that would have been expensive to find after machining. The metal hardware design is ready; the program is waiting on funding to move forward.",
       ],
       metrics: [
-        "Parametric CAD structure cut design update time significantly as requirements evolved.",
-        "Three critical assembly conflicts caught through physical mockup before any machining began.",
-        "NASA CEA analysis established the thermochemical baseline for chamber design and injector sizing.",
+        "Complete parametric CAD model across five subsystems — ready for manufacturing when the program resumes.",
+        "Three assembly conflicts identified through physical mockup before any machined parts were ordered.",
+        "NASA CEA analysis established propellant ratios, chamber pressure, and Isp baseline for the full design.",
       ],
       images: [
         "/images/projects/eon250/eon-3d-v2.jpg",
@@ -216,15 +216,15 @@ const portfolioData = {
       location: "Kolkata, India",
       timeline: "May – July 2024",
       summary:
-        "Spent the summer working in the solid propulsion research group at ICSP in Kolkata. Most of the work was hands-on — setting up instrumentation for hot-fire tests, helping with data collection, and analyzing how solid propellant grain geometry affects thrust profile over the burn.",
+        "Worked in the solid propulsion research group at ICSP in Kolkata over the summer. The bulk of my time was spent on analysis work and instrumentation preparation for their solid motor test program — studying how grain geometry affects thrust profiles and getting test hardware set up correctly before I had to return to the US.",
       context: [
-        "Worked through structural analysis on how different grain geometries change the burn surface area over time, which directly shapes the thrust curve. Looking at three different motor configurations gave me a real sense of how sensitive the thrust profile is to those geometry decisions.",
-        "On test day, the work was precise and had to be right — thermocouple placement, pressure transducer calibration, load cell alignment. The quality of the data depends entirely on getting that setup correct.",
+        "Worked through structural analysis on how different propellant grain geometries change the burn surface area over time and what that means for the shape of the thrust curve. Compared three motor configurations, which gave me a real sense of how much the thrust profile depends on those geometry decisions.",
+        "Helped set up and calibrate instrumentation for the test program — thermocouple placement, pressure transducer calibration, load cell alignment. I had to head back to the US before the firing days, but the setup work was a serious exercise in getting measurement systems right.",
       ],
       metrics: [
-        "Analyzed grain geometry and casing loads across three solid motor configurations.",
-        "Hands-on instrumentation setup for hot-fire tests — thermocouple, pressure transducer, and load cell calibration.",
-        "Direct exposure to research-scale propulsion testing outside a university lab environment.",
+        "Grain geometry and burn surface area analysis across three solid motor configurations.",
+        "Instrumentation setup and calibration for hot-fire testing — thermocouple, pressure transducer, and load cell.",
+        "First professional research environment outside a university lab — exposed to how a real propulsion program runs.",
       ],
       images: [
         "/images/experience/icsp/icsp-hotfire-setup.jpg",
