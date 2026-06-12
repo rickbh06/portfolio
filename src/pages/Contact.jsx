@@ -10,14 +10,14 @@ export default function Contact() {
       
       <section className="max-w-content mx-auto px-6 w-full fade-up">
         <h1 className="font-display font-medium text-4xl sm:text-5xl text-ground mb-12 uppercase tracking-tight max-w-2xl">
-          Let's talk propulsion.
+          Let's work together.
         </h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 rule pt-12">
           
           <div className="space-y-12">
             <p className="text-xl text-ground-60 leading-relaxed max-w-md">
-              Actively seeking internships and co-op opportunities in the mechanical and aerospace engineering realm — focusing on propulsion systems, mechatronics, and core mechanical engineering concepts.
+              I'm actively looking for internship and co-op opportunities — in propulsion, mechanical design, mechatronics, or anywhere I can contribute and learn. If you're working on something interesting and think I'd be a good fit, I'd genuinely like to hear from you.
             </p>
 
             <div>
@@ -61,9 +61,10 @@ export default function Contact() {
               <div className="rule pt-8">
                 <p className="eyebrow text-ground-60 mb-2">Focus Areas</p>
                 <ul className="text-sm text-thrust font-medium space-y-2">
-                  <li>Propulsion Systems</li>
-                  <li>Mechatronics</li>
-                  <li>Mechanical Engineering Concepts</li>
+                  <li>Aerospace Propulsion</li>
+                  <li>Mechanical Design</li>
+                  <li>Mechatronics & Embedded Systems</li>
+                  <li>Structural & Thermal Analysis</li>
                 </ul>
               </div>
             </div>

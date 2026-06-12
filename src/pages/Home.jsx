@@ -71,7 +71,7 @@ export default function Home() {
           </h1>
           
           <p className="text-xl sm:text-2xl text-cloud-60 max-w-3xl leading-relaxed mb-12">
-            Specializing in aerospace propulsion, thrust vector control, and complex mechanical systems designed from first principles.
+            Mechanical engineering student building liquid rocket engines, TVC systems, and flight avionics — mostly because I wanted to understand how they actually work.
           </p>
 
           <div className="flex items-center gap-6">

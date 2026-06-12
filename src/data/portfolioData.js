@@ -3,7 +3,7 @@ const portfolioData = {
     name: "Rick Bhattacharya",
     title: "Mechanical Engineering Student",
     headline: "Building liquid rocket engines and flight hardware from first principles.",
-    statement: "Mechanical engineering student actively seeking internships and co-op opportunities in the mechanical and aerospace engineering realm. Experienced in end-to-end design, from conceptual fluid mechanics and CAD modeling to hands-on fabrication and hot-fire testing. Driven by the challenge of optimizing performance under extreme thermal and structural constraints.",
+    statement: "I'm a mechanical engineering student at UNC Charlotte who got into rocketry by wanting to understand how things actually work — not just simulate them. Most of my projects started because I couldn't find an off-the-shelf solution that made sense, so I built one. I'm looking for internship or co-op opportunities where I can contribute real engineering work, whether that's in propulsion, mechanical design, mechatronics, or something else entirely. I learn fast and I work well in environments where the problems are hard.",
     location: "Charlotte, NC",
     // Email split to prevent bot harvesting — reconstructed at runtime
     emailUser: "sbhatt23",
@@ -21,7 +21,7 @@ const portfolioData = {
   skills: {
     cad: [
       "SolidWorks", "Fusion 360", "AutoCAD", "Onshape",
-      "Siemens NX", "Creo Parametric", "GD&T Fundamentals", "DFM",
+      "Siemens NX", "Creo Parametric", "GD&T", "DFM",
     ],
     analysis: [
       "STAR-CCM+", "NASA CEA", "Rocket Propulsion Analysis (RPA)",
@@ -41,16 +41,16 @@ const portfolioData = {
       timeline: "Jan 2026 – Present",
       status: "active",
       summary:
-        "Designed and simulated a 20 lbf thrust bipropellant liquid rocket engine from scratch on a strict $500 budget, demonstrating extreme resourcefulness. Developed robust P&ID diagrams to manage feed system architecture, and utilized MATLAB to rigorously calculate choked (sonic) flow dynamics across custom impinging injector orifices.",
+        "Designing a 20 lbf bipropellant liquid rocket engine on a $500 budget. The constraint is real — every component decision has to be justified. The injector uses an impinging orifice geometry, sized using MATLAB scripts I wrote to model choked flow conditions and confirm the orifices would stay sonic at our target mass flow rates.",
       context: [
-        "Wrote comprehensive MATLAB scripts to model isentropic flow equations, determining precise injector orifice throat areas (A_t) required to maintain choked flow given target mass flow rates and critical pressure ratios.",
-        "Performed flow simulations to analyze bipropellant mixing efficiency and pressure drop across the sonic orifices, verifying theoretical discharge coefficients (C_d).",
-        "Engineered the fluid feed system with comprehensive P&ID layouts, strategically integrating COTS components to safely regulate high-pressure propellants well within the $500 financial constraint.",
+        "Wrote MATLAB scripts to solve isentropic flow equations and size the injector throat areas for choked flow — the goal was keeping the discharge coefficient within a 2% margin of the theoretical value across the orifice geometry.",
+        "Ran flow simulations to check bipropellant mixing efficiency and pressure drop across the injector. The numbers gave me more confidence in the design before committing to hardware.",
+        "Built out full P&ID diagrams for the feed system. Using COTS components kept cost down while still allowing safe, controllable regulation of high-pressure propellants.",
       ],
       metrics: [
-        "Achieved a functional design architecture under a $500 budget limit using strategic COTS component selection.",
-        "Programmed choked flow MATLAB solvers to size sonic orifices within a 2% theoretical margin of error.",
-        "Completed rigorous P&ID mapping and fluid dynamics simulations prior to physical manufacturing."
+        "Full design architecture built under $500 through deliberate COTS selection.",
+        "MATLAB choked-flow solvers used to size orifices within 2% of theoretical.",
+        "P&ID and flow analysis completed before any physical parts were ordered.",
       ],
       images: [],
       imageLabels: [
@@ -65,16 +65,16 @@ const portfolioData = {
       timeline: "Apr 2025 – Present",
       status: "active",
       summary:
-        "Led the technical design of a 250 lbf bipropellant liquid rocket engine, engineered for a 5-second hot-fire burn. Translated NASA CEA thermochemical performance targets into a fully parametric 3D CAD model, featuring a pintle injector architecture inspired by Halfcat rocketry and advanced thermal management features.",
+        "Leading the design of a 250 lbf bipropellant liquid rocket engine for Carolina Liquid Rocketry's first hot-fire program. The engine targets a 5-second burn and uses a pintle injector — a design architecture I studied through Halfcat's open-source work and adapted for our chamber geometry and propellant combination.",
       context: [
-        "Modeled theoretical combustion chemistry in NASA CEA to optimize propellant mixture ratios, chamber pressure, and expected specific impulse (Isp).",
-        "Developed a highly parametric CAD model in Fusion 360, accelerating geometric updates across 5+ subsystem interfaces as performance requirements shifted.",
-        "Pre-empted costly manufacturing errors by producing a full-scale 3D printed mockup, identifying three critical spatial and assembly constraints early in the design phase."
+        "Used NASA CEA to work out propellant mixture ratios, chamber pressure targets, and expected specific impulse. Those numbers drove the rest of the design.",
+        "Built the CAD model in Fusion 360 with a fully parametric structure — when performance requirements changed (which they did), I could update geometry across all five subsystem interfaces without rebuilding from scratch.",
+        "Before ordering any metal, I printed a full-scale mockup to do physical fit checks. Found three interference issues that would have been expensive to discover mid-machining.",
       ],
       metrics: [
-        "Accelerated design validation cycles by 30% through parametric modeling.",
-        "Identified and resolved 3 critical spatial constraints prior to metal machining via rapid 3D prototyping.",
-        "Laid analytical groundwork for upcoming Large Eddy Simulation (LES) and FEA structural validation."
+        "Parametric CAD structure cut design update time significantly as requirements evolved.",
+        "Three critical assembly conflicts caught through physical mockup before any machining began.",
+        "NASA CEA analysis established the thermochemical baseline for chamber design and injector sizing.",
       ],
       images: [
         "/images/projects/eon250/eon-3d-v2.jpg",
@@ -97,15 +97,16 @@ const portfolioData = {
       timeline: "Dec 2025 – Present",
       status: "active",
       summary:
-        "Engineered an active Thrust Vector Control (TVC) system for a high-power model rocket. Applied Design for Manufacturing (DFM) principles to develop a custom 2-axis gimbal, integrating embedded avionics to continuously process IMU data and actuate servo-driven attitude corrections.",
+        "Built an active Thrust Vector Control system for a high-power rocket — a 2-axis gimbal that uses real-time IMU data to drive servo corrections and keep the rocket pointed where it's supposed to go. The hardware went through seven distinct CAD revisions before I was satisfied with the printability and load paths.",
       context: [
-        "Optimized the compact motor mount and servo linkages through 7 distinct CAD iteration cycles, dramatically improving 3D printability and structural load paths.",
-        "Implemented closed-loop PID control firmware to aggressively counter aerodynamic instability, relying on high-frequency gyroscope and accelerometer feedback.",
-        "Built a localized test bench to empirically validate ±15 degree pitch and yaw actuation authority before committing to an active flight test."
+        "Seven CAD iterations on the motor mount and servo linkages — each one driven by a specific printability or structural problem from the previous version. I applied DFM principles throughout so the printed parts would actually hold up under thrust loads.",
+        "Wrote PID firmware for closed-loop attitude control. The controller pulls gyroscope and accelerometer data at high frequency and drives servo corrections fast enough to counter aerodynamic disturbances.",
+        "Built a ground test bench to validate the gimbal's range of motion before any flight attempt. Confirmed ±15° pitch and yaw authority with the response times the control loop needed.",
       ],
       metrics: [
-        "Reduced mechanical design iteration time by ~40% by strictly applying DFM principles to 3D printed components.",
-        "Validated a full ±15° range of motion with millisecond-level responsiveness on a custom hardware-in-the-loop test bench.",
+        "Seven CAD revisions driven by DFM — each one a specific fix, not just a refresh.",
+        "±15° actuation range confirmed on a hardware test bench before committing to flight.",
+        "Closed-loop PID firmware written from scratch for onboard attitude control.",
       ],
       images: [
         "/images/projects/tvc/tvc-video.mp4",
@@ -130,14 +131,14 @@ const portfolioData = {
       timeline: "May 2026",
       status: "complete",
       summary:
-        "Designed and constructed a low-cost, benchtop Schlieren imaging optical system to empirically observe fluid mechanics phenomena—such as thermal plumes, shockwaves, and aerodynamic flow separation—without the need for expensive wind tunnel time.",
+        "Built a benchtop Schlieren imaging system from scratch to actually see airflow — thermal plumes, density gradients, the kind of stuff you normally need a wind tunnel budget to observe. The whole point was having a real physical check on CFD assumptions without needing expensive lab access.",
       context: [
-        "Engineered highly stable, custom hardware mirror mounts to ensure precise optical alignment across the light path, mitigating external vibrational interference.",
-        "Leveraged the refraction of light through air density gradients to visually validate Computational Fluid Dynamics (CFD) flow-field assumptions."
+        "Machined and assembled custom mirror mounts to hold precise optical alignment through the light path. Small vibrations ruin the image, so the mount stability mattered a lot.",
+        "The system works by refracting light through air density gradients — you can see things like heat rising off a hand or airflow separating around an object. It's a useful sanity check on flow field assumptions that would otherwise only exist in simulation.",
       ],
       metrics: [
-        "Successfully visualized and recorded micro-thermal plumes and complex air currents.",
-        "Provided a physical validation tool for checking theoretical CFD aerodynamic models.",
+        "Thermal plumes and air currents successfully visualized and recorded.",
+        "Gives a physical reference point for comparing against CFD flow field results.",
       ],
       images: [
         "/images/projects/schlieren/schlieren-setup.jpg",
@@ -158,14 +159,14 @@ const portfolioData = {
       timeline: "Jun 2025 – Aug 2025",
       status: "complete",
       summary:
-        "Developed a custom, small-form-factor rocket flight computer to replace commercial black-box altimeters. Engineered the PCB architecture to integrate barometric and inertial sensors, logging high-fidelity flight dynamics at high sample rates.",
+        "Designed and built a small-form-factor flight computer because I wanted to know exactly what was happening during a flight — not just read back whatever a commercial altimeter decided to save. The board integrates barometric and inertial sensors and logs data at a rate that actually captures the interesting parts of the flight profile.",
       context: [
-        "Designed the compact schematic and PCB layout in KiCAD, prioritizing minimal mass and a tightly constrained footprint to fit within standard airframes.",
-        "Hand-soldered surface mount device (SMD) components and wrote embedded C/C++ firmware to manage high-frequency sensor polling and wireless telemetry."
+        "Laid out the schematic and PCB in KiCAD, keeping mass and footprint tight enough to fit inside standard airframe tubes. Hand-soldered all the SMD components myself.",
+        "Wrote embedded C/C++ firmware to handle sensor polling and wireless telemetry. Getting the timing right for high-frequency data logging while also managing the radio link was the most involved part of the firmware work.",
       ],
       metrics: [
-        "Successfully logged and transmitted real-time altitude, velocity, and orientation data.",
-        "Proved high-fidelity data acquisition can be reliably achieved with accessible COTS hardware.",
+        "Real-time altitude, velocity, and orientation data logged and transmitted during flight.",
+        "Full-stack build — schematic, layout, assembly, and firmware all done independently.",
       ],
       images: [
         "/images/projects/flightcomputer/assembled-board.jpg",
@@ -176,21 +177,21 @@ const portfolioData = {
     },
     {
       id: "l1hybrid",
-      title: "L1 / L2 Hybrid Avionics Rocket",
+      title: "L1 / L2 Certification Rocket",
       role: "Independent Project",
       timeline: "2026 – Present",
       status: "teaser",
       summary:
-        "Designing and building a high-power certification rocket for L1 and L2 rocketry certification. The vehicle features a custom avionics bay with a pull-pin arming design — a safety-first architecture that physically disconnects electronics from pyrotechnic charges until launch-ready, eliminating accidental deployment risk on the pad.",
+        "Building a high-power rocket to earn my Tripoli L1 and L2 certifications. The avionics bay uses a pull-pin arming system — a mechanical interlock that keeps the ejection charges electrically isolated until the pin is physically pulled at the pad. It's a simple, reliable safety mechanism that removes any ambiguity about whether the system is armed.",
       context: [
-        "Engineered a compact avionics bay (AV bay) housing dual-deploy electronics, GPS telemetry, and battery management — optimized for minimal weight while maintaining full accessibility for pad operations.",
-        "The pull-pin arming mechanism is a mechanical interlock: until the pin is physically pulled by the launch crew, all ejection charges remain electrically isolated. Clean, elegant, and unambiguously safe.",
-        "Targeting Tripoli L1 and L2 high-power certification flights. This vehicle is a proving ground for the avionics and structural design philosophies carried forward into larger liquid rocket programs."
+        "The AV bay houses dual-deploy altimeters, GPS, and battery management in a compact package. The layout is designed so everything is accessible during pad prep without needing to partially disassemble the rocket.",
+        "The pull-pin interlock is straightforward by design: until the pin comes out, the e-matches have no continuity path. No software states to worry about, no way to accidentally arm it.",
+        "This vehicle is also a test platform for the custom avionics hardware I've been developing — the flight data will feed directly into improving the next iteration of the flight computer.",
       ],
       metrics: [
-        "Pull-pin safety interlock eliminates accidental e-match continuity on the pad.",
-        "Dual-deploy altimeter system for main and drogue parachute deployment.",
-        "Vehicle serves as live flight test bed for custom avionics hardware."
+        "Pull-pin interlock gives unambiguous physical confirmation the system is safe on the pad.",
+        "Dual-deploy system for independent main and drogue deployment.",
+        "Live flight test platform for custom avionics hardware development.",
       ],
       images: [
         "/images/projects/l1hybrid/rocket-teaser.jpg",
@@ -202,7 +203,7 @@ const portfolioData = {
         "Vehicle — Assembly",
         "AV Bay — Front (Pull-Pin Arming)",
         "AV Bay — Back (Electronics)",
-        "OpenRocket Model",
+        "OpenRocket Simulation",
       ],
     }
   ],
@@ -210,19 +211,20 @@ const portfolioData = {
   experience: [
     {
       id: "icsp",
-      role: "Propulsion Intern",
+      role: "Propulsion Research Intern",
       company: "Indian Centre For Space Physics",
       location: "Kolkata, India",
       timeline: "May – July 2024",
       summary:
-        "Assisted in hardware-level research within the solid propulsion group, gaining direct exposure to live instrumentation and hot-fire data analysis at a professional research scale. Executed meticulous test setups, directly impacting the quality of data used to validate experimental grain geometries.",
+        "Spent the summer working in the solid propulsion research group at ICSP in Kolkata. Most of the work was hands-on — setting up instrumentation for hot-fire tests, helping with data collection, and analyzing how solid propellant grain geometry affects thrust profile over the burn.",
       context: [
-        "Performed structural analysis to evaluate how solid propellant grain geometry and burn surface area evolve over time, influencing the core thrust profile.",
-        "Assisted in rigorous hot-fire testing, focusing on precise thermocouple placement, pressure transducer calibration, and load cell alignment."
+        "Worked through structural analysis on how different grain geometries change the burn surface area over time, which directly shapes the thrust curve. Looking at three different motor configurations gave me a real sense of how sensitive the thrust profile is to those geometry decisions.",
+        "On test day, the work was precise and had to be right — thermocouple placement, pressure transducer calibration, load cell alignment. The quality of the data depends entirely on getting that setup correct.",
       ],
       metrics: [
-        "Evaluated internal grain geometry and structural casing loads across 3 distinct solid rocket motor configurations.",
-        "Improved experimental data fidelity by executing strict, instrumented hot-fire test procedures.",
+        "Analyzed grain geometry and casing loads across three solid motor configurations.",
+        "Hands-on instrumentation setup for hot-fire tests — thermocouple, pressure transducer, and load cell calibration.",
+        "Direct exposure to research-scale propulsion testing outside a university lab environment.",
       ],
       images: [
         "/images/experience/icsp/icsp-hotfire-setup.jpg",
