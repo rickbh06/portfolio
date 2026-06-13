@@ -41,15 +41,15 @@ const portfolioData = {
       timeline: "Jan 2026 – Present",
       status: "active",
       summary:
-        "Designing a 20 lbf bipropellant liquid rocket engine on a $500 budget. The constraint is real — every component decision has to be justified. The injector uses an impinging orifice geometry, sized using MATLAB scripts I wrote to model choked flow conditions and confirm the orifices would stay sonic at our target mass flow rates.",
+        "Designing a 20 lbf bipropellant liquid rocket engine on a $500 budget. The constraint is real — every component decision has to be justified. The injector uses an impinging orifice geometry, sized using Microsoft Excel to model choked flow conditions and confirm the orifices would stay sonic at our target mass flow rates. Currently in the works of building the injector and going to be running a flow simulation on OpenFOAM or STAR-CCM+ to verify choked flow.",
       context: [
-        "Wrote MATLAB scripts to solve isentropic flow equations and size the injector throat areas for choked flow — the goal was keeping the discharge coefficient within a 2% margin of the theoretical value across the orifice geometry.",
+        "Used Microsoft Excel to solve isentropic flow equations and size the injector throat areas for choked flow — the goal was keeping the discharge coefficient within a 2% margin of the theoretical value across the orifice geometry.",
         "Ran flow simulations to check bipropellant mixing efficiency and pressure drop across the injector. The numbers gave me more confidence in the design before committing to hardware.",
         "Built out full P&ID diagrams for the feed system. Using COTS components kept cost down while still allowing safe, controllable regulation of high-pressure propellants.",
       ],
       metrics: [
         "Full design architecture built under $500 through deliberate COTS selection.",
-        "MATLAB choked-flow solvers used to size orifices within 2% of theoretical.",
+        "Excel choked-flow solvers used to size orifices within 2% of theoretical.",
         "P&ID and flow analysis completed before any physical parts were ordered.",
       ],
       images: [],
@@ -170,9 +170,11 @@ const portfolioData = {
       ],
       images: [
         "/images/projects/flightcomputer/assembled-board.jpg",
+        "/images/projects/flightcomputer/mini-flight-computer-2.jpg",
       ],
       imageLabels: [
         "Assembled SMD Flight Computer",
+        "Mini Flight Computer Layout",
       ],
     },
     {
