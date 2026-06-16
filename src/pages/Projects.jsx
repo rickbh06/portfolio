@@ -54,11 +54,13 @@ export default function Projects() {
                 {/* Narrative (Left / Top) */}
                 <div className="lg:col-span-8">
                   <div className="prose prose-lg text-ground-60 max-w-none mb-12">
+                    <h3 className="eyebrow text-ground-60 mb-4 mt-2">Overview</h3>
                     <p className="text-xl text-ground leading-relaxed mb-8">
                       {project.summary}
                     </p>
                     {project.context && project.context.length > 0 && (
                       <div className="space-y-6">
+                        <h3 className="eyebrow text-ground-60 mb-4 mt-8">Details</h3>
                         {project.context.map((note, i) => (
                           <p key={i} className="leading-relaxed">
                             {note}

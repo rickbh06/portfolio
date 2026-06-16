@@ -161,7 +161,7 @@ const portfolioData = {
       summary:
         "Designed and built a small-form-factor flight computer because I wanted to know exactly what was happening during a flight — not just read back whatever a commercial altimeter decided to save. The board integrates barometric and inertial sensors and logs data at a rate that actually captures the interesting parts of the flight profile.",
       context: [
-        "Laid out the schematic and PCB in KiCAD, keeping mass and footprint tight enough to fit inside standard airframe tubes. Hand-soldered all the SMD components myself.",
+        "Built using off-the-shelf, inexpensive parts to ensure the design remains accessible and user-friendly for anyone trying to build a flight computer.",
         "Wrote embedded C/C++ firmware to handle sensor polling and wireless telemetry. Getting the timing right for high-frequency data logging while also managing the radio link was the most involved part of the firmware work.",
       ],
       metrics: [
@@ -173,7 +173,7 @@ const portfolioData = {
         "/images/projects/flightcomputer/mini-flight-computer-2.jpg",
       ],
       imageLabels: [
-        "Assembled SMD Flight Computer",
+        "Assembled Flight Computer",
         "Mini Flight Computer Layout",
       ],
     },
