@@ -11,7 +11,7 @@ function ExperienceItem({ exp, index }) {
       {/* Header */}
       <div className="mb-12 flex flex-col sm:flex-row gap-6 items-start">
         {exp.logo && (
-          <div className="w-16 h-16 sm:w-20 sm:h-20 shrink-0 bg-white border border-field-200 rounded-xl overflow-hidden shadow-[0_4px_20px_rgb(0,0,0,0.05)] flex items-center justify-center p-2">
+          <div className={`w-16 h-16 sm:w-20 sm:h-20 shrink-0 border border-field-200 rounded-xl overflow-hidden shadow-[0_4px_20px_rgb(0,0,0,0.05)] flex items-center justify-center p-2 ${exp.logoBg || 'bg-white'}`}>
             <img src={exp.logo} alt={`${exp.company} logo`} className="w-full h-full object-contain" />
           </div>
         )}

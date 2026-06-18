@@ -245,6 +245,7 @@ const portfolioData = {
     {
       id: "capl",
       logo: "/images/experience/capl-logo.png",
+      logoBg: "bg-space-900",
       role: "Lead Engineer & President",
       company: "Charlotte Advanced Propulsion Lab",
       location: "Charlotte, NC",
@@ -276,6 +277,16 @@ const portfolioData = {
       metrics: [
         "Engineered a modular, removable 3D printed fin system.",
         "Protected internal structure from landing impacts via sacrificial/replaceable components.",
+      ],
+      images: [
+        "/images/experience/fin-assembly-v7.png",
+        "/images/experience/fin-assembly-1.jpg",
+        "/images/experience/fin-assembly-2.jpg"
+      ],
+      imageLabels: [
+        "Fin Assembly CAD (v7)",
+        "Fin Assembly Hardware",
+        "Fin Assembly Component View"
       ],
     },
   ],
