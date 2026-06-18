@@ -141,10 +141,12 @@ const portfolioData = {
         "Gives a physical reference point for comparing against CFD flow field results.",
       ],
       images: [
+        "/images/projects/schlieren/schlieren-video.mp4",
         "/images/projects/schlieren/schlieren-setup.jpg",
         "/images/projects/schlieren/schlieren-mirror.jpg",
       ],
       imageLabels: [
+        "Schlieren Video Demonstration",
         "Optical Test Setup",
         "Mirror Alignment",
       ],
