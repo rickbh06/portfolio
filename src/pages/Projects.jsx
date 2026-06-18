@@ -59,12 +59,14 @@ export default function Projects() {
                 {/* Right Side (Narrative & Gallery) */}
                 <div className="lg:col-span-8">
                   <div className="prose prose-lg prose-invert max-w-none">
+                    <h3 className="font-mono text-sm text-cloud-60 uppercase tracking-widest mb-4">Overview</h3>
                     <p className="text-xl text-cloud leading-relaxed mb-10">
                       {project.summary}
                     </p>
                     
                     {project.context && project.context.length > 0 && (
                       <div className="space-y-6 mb-12">
+                        <h3 className="font-mono text-sm text-cloud-60 uppercase tracking-widest mb-4">Implementation Details</h3>
                         {project.context.map((note, i) => (
                           <p key={i} className="leading-relaxed text-cloud-60">
                             {note}
