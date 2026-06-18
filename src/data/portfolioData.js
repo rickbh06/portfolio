@@ -240,6 +240,45 @@ const portfolioData = {
       ],
     },
   ],
+
+  leadership: [
+    {
+      id: "capl",
+      logo: "/images/experience/capl-logo.png",
+      role: "Lead Engineer & President",
+      company: "Charlotte Advanced Propulsion Lab",
+      location: "Charlotte, NC",
+      timeline: "Apr 2026 – Present",
+      summary:
+        "Led system-level design of a 300 lbf regenerative cooled bipropellant liquid rocket engine across a cross-functional team of 34 members, defining combustion chamber dimensions, injector geometry, and nozzle expansion ratio from thermodynamic first principles.",
+      context: [
+        "Improved propellant system documentation and test readiness by developing full P&ID diagrams in Microsoft Visio, capturing feed system architecture, pressurization lines, and valve configurations across 6 subsystem interfaces.",
+        "Reduced design cycle time by ~30% by building a custom liquid rocket engine sizing calculator in Python, automating Isp, chamber pressure, O/F ratio, and nozzle geometry calculations to verify designs against requirements at each iteration."
+      ],
+      metrics: [
+        "Led system design of a 300 lbf bipropellant engine with a 34-member team.",
+        "Developed full P&ID diagrams across 6 subsystem interfaces.",
+        "Built Python sizing calculator, reducing design cycle time by ~30%."
+      ],
+    },
+    {
+      id: "charlotte-rocketry",
+      logo: "/images/experience/rocketry-logo.png",
+      role: "Vehicle Design Member",
+      company: "Charlotte Rocketry Club",
+      location: "Charlotte, NC",
+      timeline: "Past",
+      summary:
+        "Part of the vehicle design team where I engineered a removable 3D printed fin system. The mechanism allowed for quick fin replacement in the event of ground impact damage, while maintaining enough structural stability to survive landing without compromising the rocket's internal structure.",
+      context: [
+        "Focused on creating a modular, easily swappable aerodynamic surface that could withstand flight loads but act as a replaceable crumple zone upon hard landings.",
+      ],
+      metrics: [
+        "Engineered a modular, removable 3D printed fin system.",
+        "Protected internal structure from landing impacts via sacrificial/replaceable components.",
+      ],
+    },
+  ],
 };
 
 export default portfolioData;
