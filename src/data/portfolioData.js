@@ -39,7 +39,7 @@ const portfolioData = {
       title: "20 lbf Bipropellant Liquid Rocket Engine",
       role: "Lead Engineer & Designer",
       timeline: "Jan 2026 – Present",
-      status: "active",
+      status: "teaser",
       summary:
         "Designing a 20 lbf bipropellant liquid rocket engine on a $500 budget. The constraint is real — every component decision has to be justified. The injector uses an impinging orifice geometry, sized using Microsoft Excel to model choked flow conditions and confirm the orifices would stay sonic at our target mass flow rates. Currently in the works of building the injector and going to be running a flow simulation on OpenFOAM or STAR-CCM+ to verify choked flow.",
       context: [

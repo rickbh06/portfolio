@@ -15,10 +15,14 @@ function Layout() {
   const location = useLocation();
   const isPrint = location.pathname === '/print';
 
+  const isHomePage = location.pathname === '/';
+  const isProjectsPage = location.pathname === '/projects';
+  const shouldPadTop = !isPrint && !isHomePage && !isProjectsPage;
+
   return (
     <div className="min-h-screen flex flex-col font-sans">
       {!isPrint && <Nav />}
-      <main className={`flex-1 w-full ${!isPrint ? 'pt-16' : ''}`}>
+      <main className={`flex-1 w-full ${shouldPadTop ? 'pt-16' : ''}`}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

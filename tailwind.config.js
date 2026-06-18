@@ -44,6 +44,7 @@ export default {
         thrust: {
           DEFAULT: '#1A3A6E',
           light: '#2B5BA8',
+          bright: '#60A5FA', // Bright blue for high contrast on dark backgrounds
           pale: '#E8EEF8',
         },
       },

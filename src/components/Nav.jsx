@@ -19,11 +19,23 @@ export default function Nav() {
     setMobileOpen(false);
   }, [location]);
 
-  // Determine if we are over a dark hero or light content
-  const isOverDarkHero = !scrolled;
+  const isHomePage = location.pathname === '/';
+  const isProjectsPage = location.pathname === '/projects';
+  const isDarkPage = isProjectsPage; 
 
-  const textClass = isOverDarkHero ? 'text-cloud hover:text-white' : 'text-ground-60 hover:text-ground';
-  const bgClass = isOverDarkHero ? 'bg-transparent border-transparent' : 'bg-field border-field-200 shadow-sm';
+  // Determine if we are over a dark area
+  const isOverDarkArea = (isHomePage && !scrolled) || isDarkPage;
+
+  const textClass = isOverDarkArea ? 'text-cloud-60 hover:text-white' : 'text-ground-60 hover:text-ground';
+  
+  let bgClass = '';
+  if (isHomePage && !scrolled) {
+    bgClass = 'bg-transparent border-transparent';
+  } else if (isDarkPage) {
+    bgClass = scrolled ? 'bg-space/90 backdrop-blur-md border-space-600 shadow-sm' : 'bg-space border-transparent';
+  } else {
+    bgClass = scrolled ? 'bg-field/90 backdrop-blur-md border-field-200 shadow-sm' : 'bg-field border-transparent';
+  }
 
   const navLinks = [
     { to: '/about', label: 'About' },
@@ -40,7 +52,7 @@ export default function Nav() {
         <Link
           to="/"
           className={`font-display font-semibold tracking-wide text-lg ${
-            isOverDarkHero ? 'text-white' : 'text-ground'
+            isOverDarkArea ? 'text-white' : 'text-ground'
           }`}
         >
           RICK BHATTACHARYA
@@ -55,7 +67,7 @@ export default function Nav() {
               className={({ isActive }) => 
                 `text-sm font-medium transition-colors ${
                   isActive 
-                    ? (isOverDarkHero ? 'text-white' : 'text-ground') 
+                    ? (isOverDarkArea ? 'text-white' : 'text-ground') 
                     : textClass
                 }`
               }
@@ -66,8 +78,8 @@ export default function Nav() {
           <a
             href="mailto:sbhatt23@charlotte.edu"
             className={`text-sm font-medium transition-colors ${
-              isOverDarkHero 
-                ? 'text-white border-b border-white hover:opacity-80' 
+              isOverDarkArea 
+                ? 'text-cloud border-b border-cloud hover:text-white hover:border-white' 
                 : 'text-thrust border-b border-thrust hover:text-thrust-light hover:border-thrust-light'
             }`}
           >
@@ -78,7 +90,7 @@ export default function Nav() {
         {/* Mobile toggle */}
         <button
           className={`sm:hidden transition-colors ${
-            isOverDarkHero ? 'text-cloud' : 'text-ground-60'
+            isOverDarkArea ? 'text-cloud' : 'text-ground-60'
           }`}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
