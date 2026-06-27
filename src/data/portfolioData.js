@@ -52,10 +52,11 @@ const portfolioData = {
         "Excel choked-flow solvers used to size orifices within 2% of theoretical.",
         "P&ID and flow analysis completed before any physical parts were ordered.",
       ],
-      images: [],
+      images: [
+        "/images/projects/biprop20/15lbf-engine.png",
+      ],
       imageLabels: [
-        "Feed System P&ID",
-        "Injector Flow Simulation",
+        "15 lbf Engine — Under Development",
       ],
     },
     {
